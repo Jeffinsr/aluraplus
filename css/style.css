@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal); 
+    font-family: var(--font-principal);
+    font-size: 1rem;  
+    font-weight: 400;
+}
+
+.principal {
+  background-image: url('../img/background.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container__botao {
+    background-color: var(--cor-do-botao);
+    padding: 12px 20px;
+    border-radius: 5px;
+    color: var(--branco-principal);
+    text-decoration: none;
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+    transition: background 0.3s ease;
+}
+
+.container__botao:hover {
+    background-color: var(--cor-do-botao-efeito);
+    color: var(--branco-principal);
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+    
+}    
+
+.container__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.container__aviso {
+    font-size: 1rem;
+    color: var(--cinza-segudario);
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 90%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-segudario);
+    font-size: 1.5rem;
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 1em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+    flex-wrap: wrap;
+}
+
+.dispositivos__titulo {
+    font-size: 3rem;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 2rem;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 2em 4em;
+}
+
+.rodape__logo {
+    margin-bottom: 2em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.lista__link {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    transition: color 0.3s ease;
+}
+
+.lista__link a:hover {
+    color: var(--cor-do-botao-efeito);
+}
+
+.lista__link a:active {
+    color: rgb(77, 9, 30);
+}
+
+.rodape__texto {
+    font-size: 0.9rem;
+    color: var(--cinza-segudario);
+    font-size: 1rem;
+    margin: 2em 0 1em 0;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .container__caixa {        
+        margin: 2rem; 
+        padding: 2rem;       
+    }
+
+    .container__titulo {
+        font-size: 1.8rem;
+        max-width: 350px;
+        margin: 20px auto;
+    }
+
+    .secundario__imagem {
+        width: 300px;
+        margin: 10px 0;
+    }
+
+    .secundario {
+        width: 90%;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    .descricao__titulo {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .descricao__texto {
+        font-size: 1.2rem;
+    }
+
+    .container__botao {
+        width: 90%;
+        display: inline-block;
+    }
+
+    .secundario__botao {
+        margin-top: 5%;
+    }
+
+    .dispositivos__titulo {
+        font-size: 2.5rem;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .dispositivos__lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lista__item {
+        font-size: 1.8rem;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape__texto {
+        max-width: 500px;
+        width: 100%;
+        margin: 30px auto;
+    }
+
+
+}
+
